@@ -4,3 +4,4 @@ theme: jekyll-theme-minimal
 sass:
   style: compressed
 permalink: /:year/:month/:day/:title.html
+future: true
