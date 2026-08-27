@@ -4,7 +4,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap');
 @import "{{ site.theme }}";
 
-/* 僅將文章與內文段落設為 18px 與思源明體 */
+/* 1. 徹底隱藏頁首的 GitHub Profile 按鈕 */
+.downloads, 
+a[href*="github.com/maochunweitw"] {
+  display: none !important;
+}
+
+/* 2. 僅針對文章內文套用 18px 與思源明體 */
 .markdown-body p,
 .markdown-body li,
 .markdown-body article,
