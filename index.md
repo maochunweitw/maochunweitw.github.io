@@ -10,7 +10,7 @@ title: 淳文字。CHUNWENZI
 
 ### INDEX ｜ 核心誌
 
-* **[01 人與人的關係 / Relationships](#)**
+* **[01 人與人的關係 / Relationships](/01%20%E4%BA%BA%E8%88%87%E4%BA%BA%E7%9A%84%E9%97%9C%E4%BF%82/2026/08/28/first-article.html)**
   *↳ 那些在轉身與留步之間，無聲堆疊的牽絆。*
 
 * **[02 生命經驗 / Life Stories](#)**
