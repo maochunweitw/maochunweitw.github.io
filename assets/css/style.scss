@@ -1,35 +1,343 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&display=swap');
 @import "{{ site.theme }}";
 
-/* 1. 徹底消滅左側側邊欄，解決版面偏右，強制作為單欄居中 */
+:root {
+  --paper: #f8f6f1;
+  --ink: #242321;
+  --muted: #77736c;
+  --line: #d9d5cc;
+  --accent: #8b4d3d;
+  --serif: "Noto Serif TC", "Noto Serif CJK TC", "Songti TC",
+            "PingFang TC", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+           "PingFang TC", "Noto Sans TC", sans-serif;
+}
+
+html {
+  background: var(--paper);
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.9;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 52px 80px;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0;
+}
+
 header {
-  display: none !important;
+  width: 100%;
+  padding: 54px 0 30px;
+  border-bottom: 1px solid var(--line);
+}
+
+header h1 {
+  font-family: var(--serif);
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  margin: 0;
+}
+
+header p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 13px;
+  letter-spacing: .14em;
 }
 
 section {
-  width: 100% !important;
-  max-width: 750px !important;
-  float: none !important;
-  margin: 0 auto !important;
-  padding: 20px !important;
+  margin: 0;
 }
 
-/* 2. 導覽列專用間距：精準 20px，絕不影響其他內文 */
-.markdown-body p:first-of-type a {
-  display: inline-block !important;
-  margin-right: 20px !important;
+.hero {
+  padding: 100px 0 90px;
+  max-width: 900px;
 }
 
-/* 3. 全站 18px 思源明體與沉穩字型設定 */
-body, p, li, article, h1, h2, h3, h4, h5, h6, a {
-  font-family: "Noto Serif TC", "Songti TC", "Source Han Serif TC", "PMingLiU", serif !important;
+.eyebrow {
+  color: var(--accent);
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .18em;
+  margin: 0 0 25px;
+  text-transform: uppercase;
 }
 
-body, p, li, article {
-  font-size: 18px !important;
-  line-height: 1.85 !important;
-  color: #2b2b2b !important;
+.hero h1 {
+  font-family: var(--serif);
+  font-size: clamp(58px, 9vw, 112px);
+  font-weight: 700;
+  letter-spacing: .03em;
+  line-height: 1.05;
+  margin: 0;
+}
+
+.hero-en {
+  font-family: Georgia, serif;
+  font-size: clamp(20px, 2.5vw, 29px);
+  font-style: italic;
+  margin: 25px 0 42px;
+  color: #514d47;
+}
+
+.hero-intro {
+  border-left: 2px solid var(--accent);
+  color: #5e5a54;
+  font-size: 17px;
+  line-height: 2.05;
+  margin: 0;
+  padding-left: 24px;
+}
+
+.section-label {
+  align-items: baseline;
+  border-top: 1px solid var(--line);
+  display: flex;
+  gap: 22px;
+  padding: 22px 0 40px;
+}
+
+.section-label span {
+  color: var(--accent);
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: .12em;
+}
+
+.section-label h2 {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  margin: 0;
+}
+
+.latest {
+  padding-bottom: 90px;
+}
+
+.post-card {
+  border-bottom: 1px solid var(--line);
+  padding: 30px 0 42px;
+}
+
+.post-card:first-of-type {
+  padding-top: 0;
+}
+
+.post-date {
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: .12em;
+  margin: 0 0 12px;
+}
+
+.post-card h3 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.45;
+  margin: 0 0 12px;
+}
+
+.post-card h3 a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.post-card h3 a:hover {
+  color: var(--accent);
+}
+
+.post-excerpt {
+  color: #65615b;
+  font-size: 16px;
+  margin: 0 0 18px;
+  max-width: 720px;
+}
+
+.read-more,
+.text-link {
+  color: var(--accent);
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: .08em;
+  text-decoration: none;
+}
+
+.read-more:hover,
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.index-section {
+  padding-bottom: 100px;
+}
+
+.index-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--line);
+}
+
+.index-item {
+  align-items: flex-start;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  display: flex;
+  gap: 24px;
+  min-height: 135px;
+  padding: 30px 25px 30px 0;
+  text-decoration: none;
+  transition: padding-left .2s ease;
+}
+
+.index-item:nth-child(odd) {
+  border-right: 1px solid var(--line);
+  padding-right: 35px;
+}
+
+.index-item:nth-child(even) {
+  padding-left: 35px;
+}
+
+.index-item:hover {
+  color: var(--accent);
+  padding-left: 10px;
+}
+
+.index-item:nth-child(even):hover {
+  padding-left: 45px;
+}
+
+.index-number {
+  color: var(--accent);
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: .1em;
+  padding-top: 6px;
+}
+
+.index-item strong,
+.index-item small {
+  display: block;
+}
+
+.index-item strong {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.index-item small {
+  color: var(--muted);
+  font-family: Georgia, serif;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 4px;
+}
+
+.manifesto {
+  border-top: 1px solid var(--line);
+  padding: 75px 0 100px;
+  text-align: center;
+}
+
+.manifesto .eyebrow {
+  margin-bottom: 35px;
+}
+
+.manifesto blockquote {
+  font-size: clamp(25px, 3vw, 38px);
+  line-height: 1.8;
+  margin: 0 auto 40px;
+  max-width: 780px;
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: .05em;
+  padding: 25px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+a {
+  color: var(--accent);
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 0 22px 50px;
+    font-size: 16px;
+  }
+
+  header {
+    padding: 30px 0 22px;
+  }
+
+  header h1 {
+    font-size: 29px;
+  }
+
+  .hero {
+    padding: 65px 0 65px;
+  }
+
+  .hero h1 {
+    font-size: 62px;
+  }
+
+  .hero-en {
+    font-size: 19px;
+    line-height: 1.5;
+  }
+
+  .hero-intro {
+    font-size: 15px;
+  }
+
+  .section-label {
+    padding-bottom: 25px;
+  }
+
+  .section-label h2 {
+    font-size: 25px;
+  }
+
+  .index-grid {
+    display: block;
+  }
+
+  .index-item,
+  .index-item:nth-child(odd),
+  .index-item:nth-child(even) {
+    border-right: 0;
+    padding: 24px 0;
+  }
+
+  .index-item strong {
+    font-size: 19px;
+  }
+
+  .manifesto {
+    padding: 55px 0 70px;
+  }
 }
