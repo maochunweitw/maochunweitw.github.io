@@ -10,14 +10,6 @@ title: 首頁
 
 ---
 
-## 最新文章
-
-{% for post in site.posts %}
-* [{{ post.title }}]({{ post.url }}) — *{{ post.date | date: "%Y-%m-%d" }}*
-{% endfor %}
-
----
-
 ## INDEX ｜ 核心誌
 
 01 人與人的關係 / Relationships  
