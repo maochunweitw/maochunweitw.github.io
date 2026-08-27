@@ -3,7 +3,12 @@ layout: default
 title: "首頁"
 ---
 
+# 淳文字。ChunWenZi
+*Journal of Words, Memories & Human Stories*
+
 [首頁](/) &nbsp;&nbsp;|&nbsp;&nbsp; [公告](/announcement.html) &nbsp;&nbsp;|&nbsp;&nbsp; [關於](/#about) &nbsp;&nbsp;|&nbsp;&nbsp; [聲明](/#disclaimer)
+
+---
 
 ## INDEX ｜ 核心誌
 
@@ -30,4 +35,3 @@ title: "首頁"
 
 * **08 鏈上冒險者札記 / The Chain Chronicles**  
   ↳ 密碼學構築的當代淘金夢，那些關於風險的抉擇、信念的崩塌與重建。
-<small>淳文字。chunwenzi ｜ Since 2015</small>
