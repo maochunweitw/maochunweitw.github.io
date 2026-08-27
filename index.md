@@ -6,7 +6,15 @@ title: 首頁
 ## 淳文字。ChunWenZi
 *Journal of Words, Memories & Human Stories*
 
-[首頁](https://maochunweitw.github.io/) [公告](https://maochunweitw.github.io/announcement.html) [關於](https://maochunweitw.github.io/about.html) [聲明](https://maochunweitw.github.io/disclaimer.html)
+[首頁](/) [公告](/announcement.html) [關於](/about.html) [聲明](/statement.html)
+
+---
+
+## 最新文章
+
+{% for post in site.posts %}
+* [{{ post.title }}]({{ post.url }}) — *{{ post.date | date: "%Y-%m-%d" }}*
+{% endfor %}
 
 ---
 
