@@ -6,7 +6,7 @@ date: 2026-08-13
 
 <div style="display:flex;gap:15px;margin-bottom:20px;font-size:0.95em;">
   <a href="/" style="color:#0366d6;text-decoration:none;">首頁</a>
-  <a href="/#announcement" style="color:#0366d6;text-decoration:none;">公告</a>
+  <a href="/#announcement.html" style="color:#0366d6;text-decoration:none;">公告</a>
   <a href="/#about" style="color:#0366d6;text-decoration:none;">關於</a>
   <a href="/#disclaimer" style="color:#0366d6;text-decoration:none;">聲明</a>
 </div>
