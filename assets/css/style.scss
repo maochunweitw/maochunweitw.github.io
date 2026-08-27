@@ -1,34 +1,22 @@
 ---
 ---
 
+/* 1. 正確引入思源明體 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&display=swap');
 @import "{{ site.theme }}";
 
-/* 1. 徹底隱藏左側主題自動產生的側邊欄 (Header) */
-header {
+/* 2. 隱藏主題左側欄產生的重複標題與 View My GitHub Profile 按鈕 */
+header h1, header p, .downloads {
   display: none !important;
 }
 
-/* 2. 取消雙欄限制，讓右側內容區塊自動滿版居中 */
-section {
-  width: 100% !important;
-  float: none !important;
-}
-
-.wrapper {
-  width: 100% !important;
-  max-width: 800px !important;
-  margin: 0 auto !important;
-}
-
-/* 3. 精準套用 18px 思源明體與舒適行高 */
-body, p, li, article {
+/* 3. 套用全站 18px 思源明體與舒適行高 */
+body, p, li, article, h1, h2, h3, h4, h5, h6, a {
   font-family: "Noto Serif TC", "Songti TC", "Source Han Serif TC", "PMingLiU", serif !important;
+}
+
+body, p, li, article {
   font-size: 18px !important;
   line-height: 1.85 !important;
   color: #2b2b2b !important;
-}
-
-h1, h2, h3, h4, h5, h6, strong {
-  font-family: "Noto Serif TC", "Songti TC", "Source Han Serif TC", serif !important;
 }
