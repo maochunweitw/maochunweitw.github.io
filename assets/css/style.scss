@@ -3,13 +3,14 @@
 
 @import "{{ site.theme }}";
 
-/* 1. 放大內文與文字層級至 18px */
-html, body, article, .post-content, p, li {
+/* 指定繁體中文明體字型、18px 字級與 1.8 行高 */
+html, body, article, .post-content, p, li, h1, h2, h3, h4, h5, h6 {
+  font-family: "Songti TC", "Noto Serif CJK TC", "Source Han Serif TC", "PMingLiU", "MingLiU", serif !important;
   font-size: 18px !important;
   line-height: 1.8 !important;
 }
 
-/* 2. 放寬頁面容器，讓 18px 的文字有足夠空間舒展 */
+/* 放寬容器寬度，讓文字舒展 */
 .container-lg, .markdown-body, body {
   max-width: 900px !important;
   margin-left: auto !important;
