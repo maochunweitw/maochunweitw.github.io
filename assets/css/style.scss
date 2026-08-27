@@ -1,24 +1,31 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap');
+/* 1. 載入極具質感的標準思源宋體（Noto Serif TC） */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&display=swap');
+
+/* 載入主題原本樣式，絕不破壞原版欄位與居左配置 */
 @import "{{ site.theme }}";
 
-/* 1. 隱藏主題自動產生的重複 Header 與 GitHub 按鈕 */
-header, .downloads {
+/* 2. 全站文字微調：徹底隱藏 theme 多餘按鈕，保持版面純淨 */
+header ul, .downloads {
   display: none !important;
 }
 
-/* 2. 僅針對內文段落套用 18px 與思源明體 */
-body, p, li, article, .markdown-body {
-  font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif !important;
+/* 3. 內文與段落：精準設定 18px 優雅明體與黃金行高 */
+body, p, li, article, section {
+  font-family: "Noto Serif TC", "Songti TC", "Source Han Serif TC", "PMingLiU", serif !important;
   font-size: 18px !important;
-  line-height: 1.8 !important;
+  line-height: 1.85 !important;
+  color: #333333 !important;
 }
 
-/* 3. 確保整體版面居中，不破壞您原本寫好的排版 */
-.wrapper {
-  max-width: 800px !important;
-  margin: 0 auto !important;
-  padding: 20px !important;
+/* 4. 標題與連結：維持清晰層次感與細緻明體質感 */
+h1, h2, h3, h4, h5, h6, strong {
+  font-family: "Noto Serif TC", "Songti TC", "Source Han Serif TC", serif !important;
+  font-weight: 700 !important;
+}
+
+a {
+  font-family: inherit !important;
 }
