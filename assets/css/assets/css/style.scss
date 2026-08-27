@@ -1,0 +1,50 @@
+---
+---
+@import "{{ site.theme }}";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap');
+
+body {
+  font-family: "Noto Serif TC", "Songti TC", serif;
+  background-color: #fafafa;
+  color: #222;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  line-height: 1.8;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
+  transition: border-color 0.2s;
+}
+
+a:hover {
+  border-bottom-color: #1a1a1a;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+}
+
+.category-item {
+  margin-bottom: 1.5rem;
+}
+
+.category-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.category-desc {
+  font-size: 0.9rem;
+  color: #666;
+  margin-left: 0.5rem;
+}
