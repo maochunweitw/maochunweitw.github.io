@@ -3,10 +3,11 @@ layout: default
 title: "自取其辱的事，別做"
 date: 2026-08-13
 ---
+
 [← 返回首頁](/)
 
 <p style="color: #666; font-size: 0.9em; margin-bottom: 20px;">發佈日期：2026 年 8 月 13 日</p>
-<p style="color: #666; font-size: 0.9em; margin-bottom: 20px;">發佈日期：2026 年 8 月 13 日</p>
+
 
 *發佈日期：2026 年 8 月 13 日*
 
