@@ -32,10 +32,10 @@ permalink: /about.html
 願這些文字，在某個時刻，
 能陪你看清一件事，或放下一個執念。
 
----
-聯繫
-聯繫郵件｜maochunweitw@gmail.com
-
 人生不求處處勝出，
 只願在關鍵時刻，
 能守住本心，也能全身而退。
+
+---
+
+聯繫郵件｜maochunweitw@gmail.com
