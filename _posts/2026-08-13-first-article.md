@@ -5,15 +5,9 @@ date: 2026-08-13
 tags: [01 人與人的關係]
 ---
 
-<div style="display:flex;gap:15px;margin-bottom:20px;font-size:0.95em;">
-  <a href="/" style="color:#0366d6;text-decoration:none;">首頁</a>
-  <a href="/#announcement.html" style="color:#0366d6;text-decoration:none;">公告</a>
-  <a href="/#about" style="color:#0366d6;text-decoration:none;">關於</a>
-  <a href="/#disclaimer" style="color:#0366d6;text-decoration:none;">聲明</a>
-</div>
+[首頁](/) | [公告](/announcement.html) | [關於](/#about) | [聲明](/#disclaimer)
 
-<p style="color:#666;font-size:0.9em;margin-bottom:20px;">發佈日期：2026 年 8 月 13 日</p>
-
+**發佈日期：** 2026 年 8 月 13 日 `＃01 人與人的關係`
 # 自取其辱的事，別做
 
 人手不足的今天下午，讓工作中的每一件事情都變得緊湊。卻偏偏在這種時候，一些活在平行時空裡的人，譬如稱之為岳母的那種人，偏偏就挑這種時候，刻意繞著彎來問些無關痛癢的瑣事。
