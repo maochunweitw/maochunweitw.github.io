@@ -4,17 +4,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&display=swap');
 @import "{{ site.theme }}";
 
-/* 1. 隱藏主題產生的多餘 header 與按鈕 */
-header h1, header p, .downloads {
+/* 1. 徹底消滅左側側邊欄，解決版面偏右，強制作為單欄居中 */
+header {
   display: none !important;
 }
 
-/* 2. 導覽列超連結間距：不加點點，自動產生適當空隙 */
-p a {
-  margin-right: 15px;
+section {
+  width: 100% !important;
+  max-width: 750px !important;
+  float: none !important;
+  margin: 0 auto !important;
+  padding: 20px !important;
 }
 
-/* 3. 套用全站 18px 思源明體，不破壞主題原生對齊 */
+/* 2. 精準控制導覽列：不擠在一起，也不會過寬（間距適中） */
+.markdown-body p:nth-of-type(1) a,
+p a[href*="url"] {
+  display: inline-block !important;
+  margin-right: 24px !important;
+}
+
+.markdown-body p:nth-of-type(1) a:last-child {
+  margin-right: 0 !important;
+}
+
+/* 3. 全站 18px 思源明體與沉穩字型設定 */
 body, p, li, article, h1, h2, h3, h4, h5, h6, a {
   font-family: "Noto Serif TC", "Songti TC", "Source Han Serif TC", "PMingLiU", serif !important;
 }
