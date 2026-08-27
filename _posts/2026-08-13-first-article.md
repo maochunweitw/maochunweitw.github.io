@@ -2,7 +2,7 @@
 layout: default
 title: "自取其辱的事，別做"
 date: 2026-08-13
-tags: [公告]
+tags: [01 人與人的關係 / Relationships]
 ---
 
 <div style="display:flex;gap:15px;margin-bottom:20px;font-size:0.95em;">
