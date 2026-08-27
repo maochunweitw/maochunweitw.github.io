@@ -3,8 +3,8 @@
 
 @import "{{ site.theme }}";
 
-/* 調整內文字體為 18px，行高為 1.8 */
-body {
+/* 精準針對 HTML 內文與 Jekyll 文章區塊放大字體至 18px */
+html, body, article, .post-content, p, li {
   font-size: 18px !important;
   line-height: 1.8 !important;
 }
