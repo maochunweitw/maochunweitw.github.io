@@ -2,6 +2,7 @@ title: 淳文字。CHUNWENZI
 description: Journal of Words, Memories & Human Stories
 theme: jekyll-theme-minimal
 sass:
-  style: compressed
+style: compressed
 permalink: /:year/:month/:day/:title.html
 future: true
+author: chun
