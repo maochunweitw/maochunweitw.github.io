@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "自取其辱的事，別做"
 permalink: /2026/08/13/relationships.html
 date: 2026-08-13
