@@ -2,6 +2,7 @@
 layout: post
 title: "自取其辱的事，別做"
 permalink: /2026/08/13/relationships.html
+author: Chun
 date: 2026-08-13
 tags: [01 人與人的關係]
 ---
