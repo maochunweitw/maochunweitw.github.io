@@ -2,22 +2,3 @@
 ---
 
 @import "{{ site.theme }}";
-
-/* 強制覆寫：全站內文套用明體、18px 字級與 1.8 行高 */
-body, 
-p, 
-li, 
-article, 
-.markdown-body, 
-.post-content {
-  font-family: "Songti TC", "Noto Serif CJK TC", "Source Han Serif TC", "PMingLiU", "MingLiU", serif !important;
-  font-size: 18px !important;
-  line-height: 1.8 !important;
-}
-
-/* 確保容器寬度足夠 */
-.markdown-body {
-  max-width: 800px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
