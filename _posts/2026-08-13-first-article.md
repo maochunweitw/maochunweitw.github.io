@@ -4,14 +4,14 @@ title: "自取其辱的事，別做"
 date: 2026-08-13
 ---
 
-<div style="display: flex; gap: 15px; margin-bottom: 20px; font-size: 0.95em;">
-  <a href="/" style="color: #0366d6; text-decoration: none;">首頁</a>
-  <a href="/#announcement" style="color: #0366d6; text-decoration: none;">公告</a>
-  <a href="/#about" style="color: #0366d6; text-decoration: none;">關於</a>
-  <a href="/#disclaimer" style="color: #0366d6; text-decoration: none;">聲明</a>
+<div style="display:flex;gap:15px;margin-bottom:20px;font-size:0.95em;">
+  <a href="/" style="color:#0366d6;text-decoration:none;">首頁</a>
+  <a href="/#announcement" style="color:#0366d6;text-decoration:none;">公告</a>
+  <a href="/#about" style="color:#0366d6;text-decoration:none;">關於</a>
+  <a href="/#disclaimer" style="color:#0366d6;text-decoration:none;">聲明</a>
 </div>
 
-<p style="color: #666; font-size: 0.9em; margin-bottom: 20px;">發佈日期：2026 年 8 月 13 日</p>
+<p style="color:#666;font-size:0.9em;margin-bottom:20px;">發佈日期：2026 年 8 月 13 日</p>
 
 # 自取其辱的事，別做
 
