@@ -1,37 +1,132 @@
 ---
 layout: default
-title: 首頁
+title: 淳文字。
 ---
 
-## 淳文字。ChunWenZi
-*Journal of Words, Memories & Human Stories*
+<section class="hero">
+  <p class="eyebrow">CHUN WEN ZI · PERSONAL JOURNAL</p>
 
-[首頁](/) [公告](/announcement.html) [關於](/about.html) [聲明](/statement.html)
+  <h1>淳文字。</h1>
 
----
+  <p class="hero-en">Journal of Words, Memories & Human Stories</p>
 
-## INDEX ｜ 核心誌
+  <p class="hero-intro">
+    寫下那些值得留下的文字。<br>
+    關於人、生活、記憶，以及我們如何成為現在的自己。
+  </p>
+</section>
 
-[01 人與人的關係 / Relationships](/2026/08/13/first-article.html)
-↳ 那些在轉身與留步之間，無聲堆疊的牽絆。
+<section class="latest">
+  <div class="section-label">
+    <span>01</span>
+    <h2>最新文字</h2>
+  </div>
 
-02 生命經驗 / Life Stories  
-↳ 痛楚、跨越，與所有讓我們成為現在自己的瞬間。
+  {% for post in site.posts limit:3 %}
+  <article class="post-card">
+    <p class="post-date">{{ post.date | date: "%Y.%m.%d" }}</p>
 
-03 閱讀與創作 / Reading & Creation  
-↳ 在別人的文字裡流浪，在自己的筆尖下定居。
+    <h3>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h3>
 
-04 城市觀察 / City Notes  
-↳ 漫步在水泥與街角陰影中，那些被忽略的日常切片。
+    {% if post.excerpt %}
+    <p class="post-excerpt">
+      {{ post.excerpt | strip_html | truncate: 140 }}
+    </p>
+    {% endif %}
 
-05 記憶收藏 / Memory Archive  
-↳ 泛黃的物件、過期的車票，與時間對抗的私人博物館。
+    <a class="read-more" href="{{ post.url | relative_url }}">
+      閱讀全文 →
+    </a>
+  </article>
+  {% endfor %}
+</section>
 
-06 情感片段 / Emotional Fragments  
-↳ 轉瞬即逝的碎念、悸動，以及無法歸類的夜半情緒。
+<section class="index-section">
+  <div class="section-label">
+    <span>02</span>
+    <h2>文字索引</h2>
+  </div>
 
-07 信仰之物 / Objects of Faith  
-↳ 支撐著靈魂繼續前行，無論是神祇、信念，還是一首歌。
+  <div class="index-grid">
 
-08 鏈上冒險者札記 / The Chain Chronicles  
-↳ 密碼學構築的當代淘金夢，那些關於風險的抉擇、信念的崩塌與重建。
+    <a href="{{ '/posts/' | relative_url }}" class="index-item">
+      <span class="index-number">01</span>
+      <span>
+        <strong>人與人的關係</strong>
+        <small>Relationships</small>
+      </span>
+    </a>
+
+    <a href="{{ '/posts/' | relative_url }}" class="index-item">
+      <span class="index-number">02</span>
+      <span>
+        <strong>生命經驗</strong>
+        <small>Life Stories</small>
+      </span>
+    </a>
+
+    <a href="{{ '/posts/' | relative_url }}" class="index-item">
+      <span class="index-number">03</span>
+      <span>
+        <strong>閱讀與創作</strong>
+        <small>Reading & Creation</small>
+      </span>
+    </a>
+
+    <a href="{{ '/posts/' | relative_url }}" class="index-item">
+      <span class="index-number">04</span>
+      <span>
+        <strong>城市觀察</strong>
+        <small>City Notes</small>
+      </span>
+    </a>
+
+    <a href="{{ '/posts/' | relative_url }}" class="index-item">
+      <span class="index-number">05</span>
+      <span>
+        <strong>記憶收藏</strong>
+        <small>Memory Archive</small>
+      </span>
+    </a>
+
+    <a href="{{ '/posts/' | relative_url }}" class="index-item">
+      <span class="index-number">06</span>
+      <span>
+        <strong>情感片段</strong>
+        <small>Emotional Fragments</small>
+      </span>
+    </a>
+
+    <a href="{{ '/posts/' | relative_url }}" class="index-item">
+      <span class="index-number">07</span>
+      <span>
+        <strong>信仰之物</strong>
+        <small>Objects of Faith</small>
+      </span>
+    </a>
+
+    <a href="{{ '/posts/' | relative_url }}" class="index-item">
+      <span class="index-number">08</span>
+      <span>
+        <strong>其他筆記</strong>
+        <small>Other Notes</small>
+      </span>
+    </a>
+
+  </div>
+</section>
+
+<section class="manifesto">
+  <p class="eyebrow">A NOTE TO MYSELF</p>
+
+  <blockquote>
+    「有些文字不是為了被看見，<br>
+    而是為了讓某一個瞬間不至於消失。」
+  </blockquote>
+
+  <a href="{{ '/關於.html' | relative_url }}" class="text-link">
+    關於淳文字 →
+  </a>
+</section>
