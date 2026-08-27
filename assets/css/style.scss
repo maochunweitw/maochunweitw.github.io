@@ -3,16 +3,19 @@
 
 @import "{{ site.theme }}";
 
-/* 指定繁體中文明體字型、18px 字級與 1.8 行高 */
-html, body, article, .post-content, p, li, h1, h2, h3, h4, h5, h6 {
-  font-family: "Songti TC", "Noto Serif CJK TC", "Source Han Serif TC", "PMingLiU", "MingLiU", serif !important;
+/* 僅針對內文段落與列表設定明體、18px 字級與 1.8 行高 */
+.markdown-body p,
+.markdown-body li,
+.post-content p,
+.post-content li {
+  font-family: "Songti TC", "Noto Serif CJK TC", "Source Han Serif TC", "PMingLiU", serif !important;
   font-size: 18px !important;
   line-height: 1.8 !important;
 }
 
-/* 放寬容器寬度，讓文字舒展 */
-.container-lg, .markdown-body, body {
-  max-width: 900px !important;
+/* 保持版面適度寬鬆 */
+.markdown-body {
+  max-width: 800px !important;
   margin-left: auto !important;
   margin-right: auto !important;
 }
