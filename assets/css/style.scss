@@ -3,8 +3,15 @@
 
 @import "{{ site.theme }}";
 
-/* 精準針對 HTML 內文與 Jekyll 文章區塊放大字體至 18px */
+/* 1. 放大內文與文字層級至 18px */
 html, body, article, .post-content, p, li {
   font-size: 18px !important;
   line-height: 1.8 !important;
+}
+
+/* 2. 放寬頁面容器，讓 18px 的文字有足夠空間舒展 */
+.container-lg, .markdown-body, body {
+  max-width: 900px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
