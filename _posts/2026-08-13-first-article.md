@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "自取其辱的事，別做"
+permalink: /2026/08/13/relationships.html
 date: 2026-08-13
 tags: [01 人與人的關係]
 ---
