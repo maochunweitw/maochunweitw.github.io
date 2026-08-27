@@ -17,14 +17,16 @@ section {
   padding: 20px !important;
 }
 
-/* 2. 精準控制導覽列：不擠在一起，也不會過寬（間距適中） */
-.markdown-body p:nth-of-type(1) a,
-p a[href*="url"] {
+/* 2. 導覽列超連結間距：精準 20px */
+.markdown-body a, 
+section a, 
+p a {
   display: inline-block !important;
-  margin-right: 24px !important;
+  margin-right: 20px !important;
 }
 
-.markdown-body p:nth-of-type(1) a:last-child {
+/* 內文連結如果不希望被加間距，取消右邊距 */
+.markdown-body p:not(:first-of-type) a {
   margin-right: 0 !important;
 }
 
