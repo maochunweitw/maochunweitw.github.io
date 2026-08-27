@@ -1,16 +1,20 @@
 ---
 ---
 
-/* 1. 正確引入思源明體 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&display=swap');
 @import "{{ site.theme }}";
 
-/* 2. 隱藏主題左側欄產生的重複標題與 View My GitHub Profile 按鈕 */
+/* 1. 隱藏主題產生的多餘 header 與按鈕 */
 header h1, header p, .downloads {
   display: none !important;
 }
 
-/* 3. 套用全站 18px 思源明體與舒適行高 */
+/* 2. 導覽列超連結間距：不加點點，自動產生適當空隙 */
+p a {
+  margin-right: 15px;
+}
+
+/* 3. 套用全站 18px 思源明體，不破壞主題原生對齊 */
 body, p, li, article, h1, h2, h3, h4, h5, h6, a {
   font-family: "Noto Serif TC", "Songti TC", "Source Han Serif TC", "PMingLiU", serif !important;
 }
