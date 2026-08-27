@@ -9,56 +9,52 @@
   --muted: #77736c;
   --line: #d9d5cc;
   --accent: #8b4d3d;
-  --serif: "Noto Serif TC", "Noto Serif CJK TC", "Songti TC",
-            "PingFang TC", serif;
-  --sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
-           "PingFang TC", "Noto Sans TC", sans-serif;
+
+  --serif:
+    "Noto Serif TC",
+    "Noto Serif CJK TC",
+    "Source Han Serif TC",
+    "Source Han Serif",
+    "Songti TC",
+    "PMingLiU",
+    "MingLiU",
+    serif;
+
+  --sans:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    "PingFang TC",
+    "Noto Sans TC",
+    sans-serif;
 }
 
-html {
-  background: var(--paper);
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: var(--paper) !important;
+  color: var(--ink) !important;
 }
 
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font-family: var(--serif);
-  font-size: 18px;
-  line-height: 1.9;
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 0 52px 80px;
+  font-family: var(--serif) !important;
+  font-size: 18px !important;
+  line-height: 1.9 !important;
+  max-width: 1180px !important;
+  margin: 0 auto !important;
+  padding: 0 52px 80px !important;
 }
 
-.wrapper {
+.site-shell {
   width: 100%;
   margin: 0;
 }
 
-header {
-  width: 100%;
-  padding: 54px 0 30px;
-  border-bottom: 1px solid var(--line);
-}
-
-header h1 {
-  font-family: var(--serif);
-  font-size: 42px;
-  font-weight: 700;
-  letter-spacing: .04em;
-  margin: 0;
-}
-
-header p {
-  margin: 8px 0 0;
-  color: var(--muted);
-  font-family: var(--sans);
-  font-size: 13px;
-  letter-spacing: .14em;
-}
-
-section {
-  margin: 0;
+a {
+  color: var(--accent) !important;
 }
 
 .hero {
@@ -67,22 +63,22 @@ section {
 }
 
 .eyebrow {
-  color: var(--accent);
-  font-family: var(--sans);
-  font-size: 11px;
+  color: var(--accent) !important;
+  font-family: var(--sans) !important;
+  font-size: 11px !important;
   font-weight: 600;
   letter-spacing: .18em;
-  margin: 0 0 25px;
+  margin: 0 0 25px !important;
   text-transform: uppercase;
 }
 
 .hero h1 {
-  font-family: var(--serif);
-  font-size: clamp(58px, 9vw, 112px);
-  font-weight: 700;
+  font-family: var(--serif) !important;
+  font-size: clamp(58px, 9vw, 112px) !important;
+  font-weight: 700 !important;
   letter-spacing: .03em;
-  line-height: 1.05;
-  margin: 0;
+  line-height: 1.05 !important;
+  margin: 0 !important;
 }
 
 .hero-en {
@@ -96,6 +92,7 @@ section {
 .hero-intro {
   border-left: 2px solid var(--accent);
   color: #5e5a54;
+  font-family: var(--serif) !important;
   font-size: 17px;
   line-height: 2.05;
   margin: 0;
@@ -112,16 +109,15 @@ section {
 
 .section-label span {
   color: var(--accent);
-  font-family: var(--sans);
+  font-family: var(--sans) !important;
   font-size: 12px;
-  letter-spacing: .12em;
 }
 
 .section-label h2 {
-  font-size: 32px;
-  font-weight: 600;
-  letter-spacing: .04em;
-  margin: 0;
+  font-family: var(--serif) !important;
+  font-size: 32px !important;
+  font-weight: 600 !important;
+  margin: 0 !important;
 }
 
 .latest {
@@ -139,30 +135,32 @@ section {
 
 .post-date {
   color: var(--muted);
-  font-family: var(--sans);
+  font-family: var(--sans) !important;
   font-size: 11px;
   letter-spacing: .12em;
   margin: 0 0 12px;
 }
 
 .post-card h3 {
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 1.45;
-  margin: 0 0 12px;
+  font-family: var(--serif) !important;
+  font-size: 30px !important;
+  font-weight: 600 !important;
+  line-height: 1.45 !important;
+  margin: 0 0 12px !important;
 }
 
 .post-card h3 a {
-  color: var(--ink);
+  color: var(--ink) !important;
   text-decoration: none;
 }
 
 .post-card h3 a:hover {
-  color: var(--accent);
+  color: var(--accent) !important;
 }
 
 .post-excerpt {
   color: #65615b;
+  font-family: var(--serif) !important;
   font-size: 16px;
   margin: 0 0 18px;
   max-width: 720px;
@@ -170,16 +168,10 @@ section {
 
 .read-more,
 .text-link {
-  color: var(--accent);
-  font-family: var(--sans);
+  font-family: var(--sans) !important;
   font-size: 12px;
   letter-spacing: .08em;
   text-decoration: none;
-}
-
-.read-more:hover,
-.text-link:hover {
-  text-decoration: underline;
 }
 
 .index-section {
@@ -195,7 +187,7 @@ section {
 .index-item {
   align-items: flex-start;
   border-bottom: 1px solid var(--line);
-  color: var(--ink);
+  color: var(--ink) !important;
   display: flex;
   gap: 24px;
   min-height: 135px;
@@ -214,33 +206,25 @@ section {
 }
 
 .index-item:hover {
-  color: var(--accent);
-  padding-left: 10px;
-}
-
-.index-item:nth-child(even):hover {
-  padding-left: 45px;
+  color: var(--accent) !important;
 }
 
 .index-number {
   color: var(--accent);
-  font-family: var(--sans);
+  font-family: var(--sans) !important;
   font-size: 12px;
-  letter-spacing: .1em;
   padding-top: 6px;
 }
 
-.index-item strong,
-.index-item small {
-  display: block;
-}
-
 .index-item strong {
+  display: block;
+  font-family: var(--serif) !important;
   font-size: 22px;
   font-weight: 500;
 }
 
 .index-item small {
+  display: block;
   color: var(--muted);
   font-family: Georgia, serif;
   font-size: 14px;
@@ -255,54 +239,159 @@ section {
 }
 
 .manifesto .eyebrow {
-  margin-bottom: 35px;
+  margin-bottom: 35px !important;
 }
 
 .manifesto blockquote {
-  font-size: clamp(25px, 3vw, 38px);
-  line-height: 1.8;
+  color: var(--ink);
+  font-family: var(--serif) !important;
+  font-size: clamp(25px, 3vw, 38px) !important;
+  line-height: 1.8 !important;
   margin: 0 auto 40px;
   max-width: 780px;
 }
 
-footer {
+.article-nav {
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 0;
+  font-family: var(--sans) !important;
+  font-size: 12px;
+}
+
+.article-nav a {
+  text-decoration: none;
+}
+
+.article-page {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.article-header {
+  border-bottom: 1px solid var(--line);
+  padding: 85px 0 45px;
+}
+
+.article-header h1 {
+  color: var(--ink);
+  font-family: var(--serif) !important;
+  font-size: clamp(38px, 6vw, 64px) !important;
+  font-weight: 600 !important;
+  line-height: 1.45 !important;
+  margin: 0 0 15px !important;
+}
+
+.article-tags {
+  color: var(--muted);
+  font-family: var(--sans) !important;
+  font-size: 12px;
+}
+
+.article-body {
+  padding: 55px 0;
+}
+
+.article-body p,
+.article-body li {
+  color: var(--ink);
+  font-family: var(--serif) !important;
+  font-size: 18px !important;
+  line-height: 2.05 !important;
+}
+
+.article-body h1 {
+  display: none !important;
+}
+
+.article-body h2,
+.article-body h3,
+.article-body h4 {
+  font-family: var(--serif) !important;
+}
+
+.article-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.site-footer {
   border-top: 1px solid var(--line);
   color: var(--muted);
-  font-family: var(--sans);
+  font-family: var(--sans) !important;
   font-size: 11px;
-  letter-spacing: .05em;
   padding: 25px 0;
   text-align: center;
 }
 
-footer p {
-  margin: 0;
+.site-footer a {
+  text-decoration: none;
 }
 
-a {
-  color: var(--accent);
-}
-
+/* 手機版：強制所有中文內容使用明體字系 */
 @media (max-width: 700px) {
+
+  html,
   body {
-    padding: 0 22px 50px;
-    font-size: 16px;
+    font-family:
+      "Noto Serif TC",
+      "Noto Serif CJK TC",
+      "Source Han Serif TC",
+      "Source Han Serif",
+      "Songti TC",
+      "PMingLiU",
+      "MingLiU",
+      serif !important;
   }
 
-  header {
-    padding: 30px 0 22px;
+  body,
+  p,
+  li,
+  blockquote,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .hero,
+  .hero h1,
+  .hero-intro,
+  .section-label h2,
+  .post-card h3,
+  .post-excerpt,
+  .index-item strong,
+  .manifesto blockquote,
+  .article-header h1,
+  .article-body,
+  .article-body p,
+  .article-body li,
+  .article-body h2,
+  .article-body h3,
+  .article-body h4 {
+    font-family:
+      "Noto Serif TC",
+      "Noto Serif CJK TC",
+      "Source Han Serif TC",
+      "Source Han Serif",
+      "Songti TC",
+      "PMingLiU",
+      "MingLiU",
+      serif !important;
   }
 
-  header h1 {
-    font-size: 29px;
+  body {
+    font-size: 17px !important;
+    padding: 0 22px 50px !important;
   }
 
   .hero {
-    padding: 65px 0 65px;
+    padding: 65px 0;
   }
 
   .hero h1 {
-    font-size: 62px;
+    font-size: 62px !important;
   }
 
   .hero-en {
@@ -311,7 +400,7 @@ a {
   }
 
   .hero-intro {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .section-label {
@@ -319,7 +408,7 @@ a {
   }
 
   .section-label h2 {
-    font-size: 25px;
+    font-size: 25px !important;
   }
 
   .index-grid {
@@ -334,10 +423,28 @@ a {
   }
 
   .index-item strong {
-    font-size: 19px;
+    font-size: 20px !important;
   }
 
-  .manifesto {
-    padding: 55px 0 70px;
+  .article-nav {
+    font-size: 11px;
+  }
+
+  .article-header {
+    padding: 55px 0 32px;
+  }
+
+  .article-header h1 {
+    font-size: 36px !important;
+  }
+
+  .article-body {
+    padding: 38px 0;
+  }
+
+  .article-body p,
+  .article-body li {
+    font-size: 17px !important;
+    line-height: 2.05 !important;
   }
 }
