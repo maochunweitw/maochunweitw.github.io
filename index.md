@@ -6,7 +6,7 @@ title: "首頁"
 # 淳文字。ChunWenZi
 *Journal of Words, Memories & Human Stories*
 
-[首頁](/) &nbsp;&nbsp;|&nbsp;&nbsp; [公告](/announcement.html) &nbsp;&nbsp;|&nbsp;&nbsp; [關於](/#about) &nbsp;&nbsp;|&nbsp;&nbsp; [聲明](/#disclaimer)
+[首頁](https://maochunweitw.github.io/) &nbsp;&nbsp;·&nbsp;&nbsp; [公告](https://maochunweitw.github.io/announcement.html) &nbsp;&nbsp;·&nbsp;&nbsp; [關於](https://maochunweitw.github.io/about.html) &nbsp;&nbsp;·&nbsp;&nbsp; [聲明](https://maochunweitw.github.io/statement.html)
 
 ---
 
