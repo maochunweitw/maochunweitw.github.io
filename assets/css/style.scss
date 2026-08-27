@@ -4,19 +4,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap');
 @import "{{ site.theme }}";
 
-/* 1. 徹底隱藏頁首的 GitHub Profile 按鈕 */
-.downloads, 
-a[href*="github.com/maochunweitw"] {
+/* 1. 隱藏主題自動產生的重複 Header 與 GitHub 按鈕 */
+header, .downloads {
   display: none !important;
 }
 
-/* 2. 僅針對文章內文套用 18px 與思源明體 */
-.markdown-body p,
-.markdown-body li,
-.markdown-body article,
-.post-content p,
-.post-content li {
+/* 2. 僅針對內文段落套用 18px 與思源明體 */
+body, p, li, article, .markdown-body {
   font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif !important;
   font-size: 18px !important;
   line-height: 1.8 !important;
+}
+
+/* 3. 確保整體版面居中，不破壞您原本寫好的排版 */
+.wrapper {
+  max-width: 800px !important;
+  margin: 0 auto !important;
+  padding: 20px !important;
 }
