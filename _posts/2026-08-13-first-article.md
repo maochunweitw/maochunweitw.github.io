@@ -5,7 +5,7 @@ date: 2026-08-13
 tags: [01 人與人的關係]
 ---
 
-[首頁](/) | [公告](/announcement.html) | [關於](/#about) | [聲明](/#disclaimer)
+[首頁](/) &nbsp;&nbsp;|&nbsp;&nbsp; [公告](/announcement.html) &nbsp;&nbsp;|&nbsp;&nbsp; [關於](/#about) &nbsp;&nbsp;|&nbsp;&nbsp; [聲明](/#disclaimer)
 
 **發佈日期：** 2026 年 8 月 13 日 `＃01 人與人的關係`
 # 自取其辱的事，別做
