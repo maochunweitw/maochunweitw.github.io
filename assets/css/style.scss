@@ -17,17 +17,10 @@ section {
   padding: 20px !important;
 }
 
-/* 2. 導覽列超連結間距：精準 20px */
-.markdown-body a, 
-section a, 
-p a {
+/* 2. 導覽列專用間距：精準 20px，絕不影響其他內文 */
+.markdown-body p:first-of-type a {
   display: inline-block !important;
   margin-right: 20px !important;
-}
-
-/* 內文連結如果不希望被加間距，取消右邊距 */
-.markdown-body p:not(:first-of-type) a {
-  margin-right: 0 !important;
 }
 
 /* 3. 全站 18px 思源明體與沉穩字型設定 */
