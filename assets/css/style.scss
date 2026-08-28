@@ -6,10 +6,13 @@
 /* ==================================================
    1. 隱藏 Minimal 主題預設產生的頁面頂部 header 標題
    ================================================== */
-
+header,
+.wrapper > header {
+  display: none !important;
+}
 
 /* ==================================================
-   2. 基礎變數與全局設定
+   2. 全局變數與風格設定
    ================================================== */
 :root {
   --paper: #f8f6f1;
@@ -99,7 +102,7 @@ a {
 }
 
 /* ==================================================
-   4. 分區標題與最新文章列表
+   4. 最新文章列表
    ================================================== */
 .section-label {
   align-items: baseline;
@@ -176,16 +179,27 @@ a {
 }
 
 /* ==================================================
-   5. 文字索引：雙欄框線網格 (Index Grid)
+   5. 02 文字索引：雙欄框線卡片網格 (Grid & Lists Clean)
    ================================================== */
 .index-section {
   padding-bottom: 100px;
+}
+
+/* 強制清除預設 ul / li 項目符號點點 */
+.index-section ul,
+body ul {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .index-grid {
   display: grid !important;
   grid-template-columns: 1fr 1fr !important;
   border-top: 1px solid var(--line) !important;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .index-item {
@@ -198,6 +212,7 @@ a {
   padding: 30px 25px 30px 0 !important;
   text-decoration: none !important;
   transition: padding-left .2s ease;
+  list-style: none !important;
 }
 
 .index-item:nth-child(odd) {
@@ -237,7 +252,7 @@ a {
 }
 
 /* ==================================================
-   6. 結語與宣言區塊
+   6. 宣言區塊
    ================================================== */
 .manifesto {
   border-top: 1px solid var(--line);
