@@ -2,6 +2,17 @@
 layout: default
 ---
 
+---
+layout: default
+---
+
+<style>
+  /* 隱藏 Minimal 主題預設產生的頁面頂部 header */
+  header {
+    display: none !important;
+  }
+</style>
+
 <section class="hero">
   <p class="eyebrow">CHUN WEN ZI · PERSONAL JOURNAL</p>
 
