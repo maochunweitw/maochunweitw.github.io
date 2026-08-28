@@ -1,8 +1,22 @@
 ---
 ---
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&display=swap');
 @import "{{ site.theme }}";
+
+/* 1. 全域最高權限隱藏 Minimal 主題預設 header（電腦與手機版一律生效） */
+header,
+header#header,
+.wrapper > header,
+body > div > header {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute !important;
+  pointer-events: none !important;
+}
 
 :root {
   --paper: #f8f6f1;
@@ -10,16 +24,8 @@
   --muted: #77736c;
   --line: #d9d5cc;
   --accent: #8b4d3d;
-
   --serif: "Noto Serif TC", serif;
-
-  --sans:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Helvetica Neue",
-    "PingFang TC",
-    "Noto Sans TC",
-    sans-serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang TC", "Noto Sans TC", sans-serif;
 }
 
 * {
@@ -29,9 +35,7 @@
 /* ==================================================
    全站基本字體
    ================================================== */
-
-html,
-body {
+html, body {
   background: var(--paper) !important;
   color: var(--ink) !important;
   font-family: "Noto Serif TC", serif !important;
@@ -45,39 +49,11 @@ body {
   padding: 0 52px 80px !important;
 }
 
-body p,
-body li,
-body blockquote,
-body h1,
-body h2,
-body h3,
-body h4,
-body h5,
-body h6 {
+body p, body li, body blockquote, body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "Noto Serif TC", serif !important;
 }
 
-/* ==================================================
-   Minimal Theme 原本的網站標題
-   隱藏它，避免與新版首頁標題重複
-   ================================================== */
-
-.wrapper > header h1,
-.wrapper > header p {
-  display: none !important;
-}
-
-/* 但新版首頁自己的 Hero 標題保留 */
-.hero h1 {
-  display: block !important;
-}
-
-/* ==================================================
-   網站主體
-   ================================================== */
-
-.wrapper,
-.site-shell {
+.wrapper, .site-shell {
   width: 100% !important;
   margin: 0 !important;
 }
@@ -89,7 +65,6 @@ a {
 /* ==================================================
    首頁 Hero
    ================================================== */
-
 .hero {
   padding: 100px 0 90px !important;
   max-width: 900px;
@@ -102,6 +77,7 @@ a {
   letter-spacing: .03em;
   line-height: 1.05 !important;
   margin: 0 !important;
+  display: block !important;
 }
 
 .eyebrow {
@@ -135,7 +111,6 @@ a {
 /* ==================================================
    區塊標題
    ================================================== */
-
 .section-label {
   align-items: baseline;
   border-top: 1px solid var(--line);
@@ -160,7 +135,6 @@ a {
 /* ==================================================
    最新文章
    ================================================== */
-
 .latest {
   padding-bottom: 90px;
 }
@@ -207,8 +181,7 @@ a {
   max-width: 720px;
 }
 
-.read-more,
-.text-link {
+.read-more, .text-link {
   font-family: var(--sans) !important;
   font-size: 12px;
   letter-spacing: .08em;
@@ -218,7 +191,6 @@ a {
 /* ==================================================
    文字索引
    ================================================== */
-
 .index-section {
   padding-bottom: 100px;
 }
@@ -280,7 +252,6 @@ a {
 /* ==================================================
    結語
    ================================================== */
-
 .manifesto {
   border-top: 1px solid var(--line);
   padding: 75px 0 100px;
@@ -299,7 +270,6 @@ a {
 /* ==================================================
    文章頁
    ================================================== */
-
 .article-page {
   max-width: 780px;
   margin: 0 auto;
@@ -342,23 +312,18 @@ a {
   padding: 55px 0;
 }
 
-/* 正文內的 H1 隱藏
-   → 文章標題只保留上方 article-header 那一個 */
 .article-body h1 {
   display: none !important;
 }
 
-.article-body p,
-.article-body li {
+.article-body p, .article-body li {
   color: var(--ink);
   font-family: "Noto Serif TC", serif !important;
   font-size: 18px !important;
   line-height: 2.05 !important;
 }
 
-.article-body h2,
-.article-body h3,
-.article-body h4 {
+.article-body h2, .article-body h3, .article-body h4 {
   font-family: "Noto Serif TC", serif !important;
 }
 
@@ -370,7 +335,6 @@ a {
 /* ==================================================
    Footer
    ================================================== */
-
 .site-footer {
   border-top: 1px solid var(--line);
   color: var(--muted);
@@ -387,52 +351,20 @@ a {
 /* ==================================================
    手機版
    ================================================== */
-
 @media (max-width: 700px) {
-
-  html,
-  body {
+  html, body {
     font-family: "Noto Serif TC", serif !important;
     font-size: 17px !important;
   }
-
-  body,
-  body p,
-  body li,
-  body blockquote,
-  body h1,
-  body h2,
-  body h3,
-  body h4,
-  body h5,
-  body h6,
-  .hero,
-  .hero h1,
-  .hero-intro,
-  .section-label h2,
-  .post-card h3,
-  .post-excerpt,
-  .index-item strong,
-  .manifesto blockquote,
-  .article-page,
-  .article-header h1,
-  .article-body,
-  .article-body p,
-  .article-body li,
-  .article-body h2,
-  .article-body h3,
-  .article-body h4 {
+  
+  body, body p, body li, body blockquote, body h1, body h2, body h3, body h4, body h5, body h6,
+  .hero, .hero h1, .hero-intro, .section-label h2, .post-card h3, .post-excerpt,
+  .index-item strong, .manifesto blockquote, .article-page, .article-header h1,
+  .article-body, .article-body p, .article-body li, .article-body h2, .article-body h3, .article-body h4 {
     font-family: "Noto Serif TC", serif !important;
   }
 
-  .eyebrow,
-  .post-date,
-  .article-tags,
-  .read-more,
-  .text-link,
-  .article-nav,
-  .site-footer,
-  .index-number {
+  .eyebrow, .post-date, .article-tags, .read-more, .text-link, .article-nav, .site-footer, .index-number {
     font-family: var(--sans) !important;
   }
 
@@ -470,9 +402,7 @@ a {
     display: block;
   }
 
-  .index-item,
-  .index-item:nth-child(odd),
-  .index-item:nth-child(even) {
+  .index-item, .index-item:nth-child(odd), .index-item:nth-child(even) {
     border-right: 0;
     padding: 24px 0;
   }
@@ -497,25 +427,12 @@ a {
     padding: 38px 0;
   }
 
-  .article-body p,
-  .article-body li {
+  .article-body p, .article-body li {
     font-size: 17px !important;
     line-height: 2.05 !important;
   }
 
-  /* 再確保文章正文不出現第二個 H1 */
   .article-body h1 {
     display: none !important;
   }
-/* 徹底抹除 Minimal 主題預設產生的左側/頂部褐色標題 */
-header,
-.wrapper > header,
-header h1,
-header p,
-header a {
-  display: none !important;
-  visibility: hidden !important;
-  height: 0 !important;
-  width: 0 !important;
-  overflow: hidden !important;
 }
