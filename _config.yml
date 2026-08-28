@@ -1,8 +1,3 @@
-title: 淳文字。CHUNWENZI
-description: Journal of Words, Memories & Human Stories
-theme: jekyll-theme-minimal
-sass:
-style: compressed
-permalink: /:year/:month/:day/:title.html
-future: true
-author: chun
+title: "淳文字。"
+title_separator: "|"  # 分隔線符號
+description: "CHUNWENZI · Journal of Words, Memories & Human Stories"
