@@ -18,10 +18,6 @@ layout: default
 
 <div style="letter-spacing: 2px; font-size: 0.8rem; color: #888; margin-bottom: 6px;">CHUN WEN ZI · PERSONAL JOURNAL</div>
 
-# 淳文字。
-
-*Journal of Words, Memories & Human Stories*
-
 > 寫下那些值得留下的文字。  
 > 關於人、生活、記憶，以及我們如何成為現在的自己。
 
