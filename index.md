@@ -3,14 +3,26 @@ layout: default
 ---
 
 <style>
-  /* 隱藏 Minimal 主題頂部的預設 Header 區塊 */
-  body > div.wrapper > header,
-  header {
+  /* 徹底隱藏 Minimal 主題產生的左上方/頂部標題與側欄 */
+  header,
+  header #header,
+  .wrapper > header,
+  body > div > header {
     display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
     height: 0 !important;
-    padding: 0 !important;
+    width: 0 !important;
     margin: 0 !important;
-    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    pointer-events: none !important;
+  }
+
+  /* 調整容器頂部間距，避免留下空白 */
+  .wrapper, section {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
   }
 </style>
 
