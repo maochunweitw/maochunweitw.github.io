@@ -3,7 +3,8 @@
 
 @import "{{ site.theme }}";
 
-header {
+header,
+.wrapper > header {
   display: none !important;
 }
 
