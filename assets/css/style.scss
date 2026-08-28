@@ -3,19 +3,13 @@
 
 @import "{{ site.theme }}";
 
-/* 隱藏頂部標題 */
+/* 隱藏 Minimal 主題預設產生的頁面頂部 header 標題 */
 header,
 .wrapper > header {
   display: none !important;
 }
 
-/* 恢復全站明體 */
-body, section, p, em, blockquote, strong, h1, h2, h3, h4, a {
-  font-family: "Noto Serif TC", "Songti TC", serif !important;
-  color: #333333;
-}
-
-/* 恢復版面 */
+/* 保持原本主題的寬度佈局 */
 section {
   width: 100% !important;
   float: none !important;
