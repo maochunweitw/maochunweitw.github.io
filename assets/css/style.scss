@@ -1,9 +1,105 @@
 ---
 ---
+
 @import "{{ site.theme }}";
 
+/* 1. 隱藏預設 header 標題 */
+header,
+.wrapper > header {
+  display: none !important;
+}
+
+/* 2. 全局字型與背景設定 */
+:root {
+  --paper: #f8f6f1;
+  --ink: #242321;
+  --muted: #77736c;
+  --line: #d9d5cc;
+  --accent: #8b4d3d;
+  --serif: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang TC", "Noto Sans TC", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: var(--paper) !important;
+  color: var(--ink) !important;
+  font-family: var(--serif) !important;
+}
+
 body {
-  font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
-  background-color: #f8f6f1;
-  color: #242321;
+  font-size: 18px !important;
+  line-height: 1.9 !important;
+  max-width: 1180px !important;
+  margin: 0 auto !important;
+  padding: 0 52px 80px !important;
+}
+
+body p, body li, body blockquote, body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: var(--serif) !important;
+}
+
+.wrapper, .site-shell {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+a {
+  color: var(--accent) !important;
+}
+
+/* 3. 消除 Markdown 列表預設黑色圓點，排成網格 */
+.main-content ul,
+section ul,
+ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  border-top: 1px solid var(--line) !important;
+}
+
+.main-content li,
+section li,
+li {
+  list-style: none !important;
+  border-bottom: 1px solid var(--line) !important;
+  padding: 20px 15px !important;
+  margin: 0 !important;
+}
+
+.main-content li:nth-child(odd),
+section li:nth-child(odd) {
+  border-right: 1px solid var(--line) !important;
+}
+
+/* 4. 底部宣言區塊 */
+.manifesto {
+  border-top: 1px solid var(--line);
+  padding: 75px 0 100px;
+  text-align: center;
+}
+
+.manifesto blockquote {
+  color: var(--ink);
+  font-family: var(--serif) !important;
+  font-size: clamp(25px, 3vw, 38px) !important;
+  line-height: 1.8 !important;
+  margin: 0 auto 40px;
+  max-width: 780px;
+}
+
+/* 5. 手機版適應 */
+@media (max-width: 700px) {
+  .main-content ul, section ul, ul {
+    display: block !important;
+  }
+  .main-content li, section li, li {
+    border-right: 0 !important;
+    padding: 18px 0 !important;
+  }
 }
