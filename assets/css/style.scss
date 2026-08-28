@@ -507,6 +507,15 @@ a {
   .article-body h1 {
     display: none !important;
   }
+/* 徹底抹除 Minimal 主題預設產生的左側/頂部褐色標題 */
+header,
+.wrapper > header,
+header h1,
+header p,
+header a {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
 }
-/* 強制隱藏 Minimal 主題預設產生的頁面頂部 header */
-header { display: none !important; }
