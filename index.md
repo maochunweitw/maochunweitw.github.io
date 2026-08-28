@@ -3,9 +3,14 @@ layout: default
 ---
 
 <style>
-  /* 隱藏 Minimal 主題預設產生的頁面頂部 header */
+  /* 隱藏 Minimal 主題頂部的預設 Header 區塊 */
+  body > div.wrapper > header,
   header {
     display: none !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
   }
 </style>
 
