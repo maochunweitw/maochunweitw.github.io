@@ -1,6 +1,5 @@
 ---
 layout: default
-title: 淳文字。
 ---
 
 <section class="hero">
