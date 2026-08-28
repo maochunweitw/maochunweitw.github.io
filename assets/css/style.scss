@@ -1,7 +1,10 @@
 ---
 ---
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&display=swap');
 @import "{{ site.theme }}";
+
+header {
+  display: none !important;
+}
 
 /* 1. 全域最高權限隱藏 Minimal 主題預設 header（電腦與手機版一律生效） */
 header,
