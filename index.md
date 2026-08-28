@@ -2,10 +2,6 @@
 layout: default
 ---
 
----
-layout: default
----
-
 <style>
   /* 隱藏 Minimal 主題預設產生的頁面頂部 header */
   header {
