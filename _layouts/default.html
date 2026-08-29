@@ -1,31 +1,12 @@
 <!doctype html>
-<html lang="zh-Hant">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{{ site.description }}">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-</head>
-<body>
+<html lang="zh-Hant"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }}｜{% endif %}淳文字</title>
+<meta name="description" content="{{ site.description }}">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head><body>
 <header class="site-header">
-  <div class="site-brand">
-    <a href="{{ '/' | relative_url }}">淳文字。</a>
-    <span>CHUN WEN ZI · PERSONAL JOURNAL</span>
-  </div>
-
-  <nav>
-    <a href="{{ '/' | relative_url }}">首頁</a>
-    <a href="{{ '/announcement.html' | relative_url }}">公告</a>
-    <a href="{{ '/about.html' | relative_url }}">關於</a>
-    <a href="{{ '/statement.html' | relative_url }}">聲明</a>
-  </nav>
-</header>
-
-<main class="main-content">
-  {{ content }}
-</main>
-
-<footer>淳文字。</footer>
-</body>
-</html>
+<div class="site-brand"><a href="{{ '/' | relative_url }}"><span class="brand-name">淳文字</span><span class="brand-dot">。</span></a><span class="slogan">CHUN WEN ZI · PERSONAL JOURNAL</span></div>
+<nav><a href="{{ '/' | relative_url }}">首頁</a><a href="{{ '/announcement.html' | relative_url }}">公告</a><a href="{{ '/about.html' | relative_url }}">關於</a><a href="{{ '/statement.html' | relative_url }}">聲明</a></nav>
+</header><main class="main-content">{{ content }}</main><footer>淳文字</footer>
+</body></html>

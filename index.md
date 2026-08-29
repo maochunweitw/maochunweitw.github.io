@@ -1,38 +1,8 @@
 ---
 layout: default
 ---
-
-# 淳文字。
-*CHUN WEN ZI · PERSONAL JOURNAL*
-
-寫下那些值得留下的文字。關於人、生活、記憶，以及我們如何成為現在的自己。
-
----
-
-## 01 最新文字
-
-### [自取其辱的事，別做](/posts/dont-do-humiliating-things/)
-*2026.08.13*
-
-有些事情，明明知道做了會讓自己難堪，卻還是會去看。
-
-[閱讀全文 →](/posts/dont-do-humiliating-things/)
-
----
-
-## 02 文字索引
-
-- **01** [人與人的關係 · Relationships](#)
-- **02** [生命經驗 · Life Stories](#)
-- **03** [閱讀與創作 · Reading & Creation](#)
-- **04** [城市觀察 · City Notes](#)
-- **05** [記憶收藏 · Memory Archive](#)
-- **06** [情感片段 · Emotional Fragments](#)
-- **07** [信仰之物 · Objects of Faith](#)
-- **08** [其他筆記 · Other Notes](#)
-
----
-
-> 「有些文字不是為了被看見，而是為了讓某一個瞬間不至於消失。」
-
-[關於淳文字 →](about)
+<section class="hero"><div class="eyebrow">PERSONAL JOURNAL</div><h1><span>淳文字</span><i>。</i></h1><p class="intro">走過半生，慢慢明白——人生很多時候，不在於贏，而在於看清。</p></section>
+<section class="latest"><div class="section-heading"><h2>最新文字</h2><span>WRITINGS</span></div>
+{% for post in site.posts %}<article class="post-card"><div class="post-meta">{{ post.date | date: "%Y.%m.%d" }}{% if post.categories %} · {{ post.categories | first }}{% endif %}</div><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3><p>{{ post.excerpt | strip_html | strip_newlines | truncate: 120 }}</p><a class="read-more" href="{{ post.url | relative_url }}">閱讀全文 →</a></article>{% else %}<p class="empty">目前尚無文章。</p>{% endfor %}
+</section><section class="about-block"><h2>關於這裡</h2><p>記錄生活裡的起落，記錄修行中的體悟，也記錄那些在人群與歲月之間，逐漸明白的道理。</p><a href="{{ '/about.html' | relative_url }}">閱讀關於淳文字 →</a></section>
+<section class="manifesto"><p>人生不求處處勝出，<br>只願在關鍵時刻，<br>能守住本心，也能全身而退。</p></section>
