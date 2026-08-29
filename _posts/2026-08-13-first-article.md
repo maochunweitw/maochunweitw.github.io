@@ -6,7 +6,6 @@ categories:
   - 人與人的關係
 tags:
   - 人與人的關係
-permalink: /posts/dont-do-humiliating-things/
 ---
 
 有些事情，明明知道做了會讓自己難堪，卻還是會去做。

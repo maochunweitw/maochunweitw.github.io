@@ -6,7 +6,7 @@ permalink: /about.html
 
 ## 關於 ｜ About ChunWenZi
 
-[首頁]({{ '/' | relative_url }}) [公告]({{ '/announcement.html' | relative_url }}) [關於]({{ '/about.html' | relative_url }}) [聲明]({{ '/statement.html' | relative_url }})
+[首頁](/) [公告](/announcement.html) [關於](/about.html) [聲明](/statement.html)
 
 ---
 走過半生，慢慢明白——
