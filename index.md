@@ -14,47 +14,8 @@ layout: default
 
 </section>
 
-<section class="latest">
 
-  <div class="section-heading">
-    <h2>最新文字</h2>
-    <span>WRITINGS</span>
-  </div>
-
-  {% for post in site.posts %}
-
-  <article class="post-card">
-
-    <div class="post-meta">
-      {{ post.date | date: "%Y.%m.%d" }}
-      {% if post.categories %}
-      · {{ post.categories | first }}
-      {% endif %}
-    </div>
-
-    <h3>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </h3>
-
-    <p>
-      {{ post.excerpt | strip_html | strip_newlines | truncate: 120 }}
-    </p>
-
-    <a class="read-more" href="{{ post.url | relative_url }}">
-      閱讀全文 →
-    </a>
-
-  </article>
-
-  {% else %}
-
-  <p class="empty">目前尚無文章。</p>
-
-  {% endfor %}
-
-</section>
-
-<section class="categories">
+<section class="categories-home">
 
   <div class="section-heading">
     <h2>八大分類</h2>
@@ -74,7 +35,7 @@ layout: default
     </a>
 
     <a class="category-card" href="{{ '/category/reading-creation/' | relative_url }}">
-      <strong>03 閱讀與創作 / Reading & Creation</strong>
+      <strong>03 閱讀與創作 / Reading &amp; Creation</strong>
       <span>在別人的文字裡流浪，在自己的筆尖下定居。</span>
     </a>
 
@@ -107,6 +68,50 @@ layout: default
 
 </section>
 
+
+<section class="latest">
+
+  <div class="section-heading">
+    <h2>最新文字</h2>
+    <span>WRITINGS</span>
+  </div>
+
+  {% for post in site.posts %}
+
+  <article class="post-card">
+
+    <div class="post-meta">
+      {{ post.date | date: "%Y.%m.%d" }}
+      {% if post.category %}
+      · {{ post.category }}
+      {% elsif post.categories %}
+      · {{ post.categories | first }}
+      {% endif %}
+    </div>
+
+    <h3>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h3>
+
+    <p>
+      {{ post.excerpt | strip_html | strip_newlines | truncate: 120 }}
+    </p>
+
+    <a class="read-more" href="{{ post.url | relative_url }}">
+      閱讀全文 →
+    </a>
+
+  </article>
+
+  {% else %}
+
+  <p class="empty">目前尚無文章。</p>
+
+  {% endfor %}
+
+</section>
+
+
 <section class="about-block">
 
   <h2>關於這裡</h2>
@@ -120,6 +125,7 @@ layout: default
   </a>
 
 </section>
+
 
 <section class="manifesto">
 
