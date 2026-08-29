@@ -18,7 +18,7 @@ layout: default
 <section class="categories-home">
 
   <div class="section-heading">
-    <h2>八大分類</h2>
+    <h2>文章分類</h2>
     <span>CATEGORIES</span>
   </div>
 
@@ -108,21 +108,6 @@ layout: default
   <p class="empty">目前尚無文章。</p>
 
   {% endfor %}
-
-</section>
-
-
-<section class="about-block">
-
-  <h2>關於這裡</h2>
-
-  <p>
-    記錄生活裡的起落，記錄修行中的體悟，也記錄那些在人群與歲月之間，逐漸明白的道理。
-  </p>
-
-  <a href="{{ '/about.html' | relative_url }}">
-    閱讀關於淳文字 →
-  </a>
 
 </section>
 
