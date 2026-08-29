@@ -8,8 +8,17 @@
   --muted: #817b72;
   --line: #ddd7cc;
   --accent: #875043;
-  --serif: "Noto Serif TC", "Songti TC", "PingFang TC", serif;
-  --sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang TC", sans-serif;
+
+  /*
+   * 中文明體字型優先順序：
+   * Noto Serif TC → Noto Serif CJK TC → Songti TC → PingFang TC → serif
+   *
+   * 不依賴單一手機字型名稱，
+   * 讓不同裝置可以盡可能使用可用的中文明體。
+   */
+  --serif: "Noto Serif TC", "Noto Serif CJK TC", "Songti TC", "STSong", "PMingLiU", "MingLiU", serif;
+
+  --sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang TC", "Noto Sans TC", sans-serif;
 }
 
 html {
