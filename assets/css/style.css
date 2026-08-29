@@ -9,42 +9,10 @@
   --line: #ddd7cc;
   --accent: #875043;
 
-  --serif: "Noto Serif TC", "Songti TC", "PingFang TC", serif;
+  --serif: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
 
   --sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
     "PingFang TC", "Noto Sans TC", sans-serif;
-}
-
-/* 全站中文內容使用明體／宋體 */
-html,
-body,
-.site-header,
-.main-content,
-.hero,
-.intro,
-.section-heading,
-.section-heading h2,
-.post-card,
-.post-card h3,
-.post-card p,
-.category-list,
-.category-card,
-.category-card strong,
-.category-card span,
-.about-block,
-.about-block h2,
-.manifesto,
-.manifesto p,
-.page-header,
-.page-header h1,
-.post,
-.post-header,
-.post-header h1,
-.post-content,
-.post-content p,
-.notice-list,
-.notice-list li {
-  font-family: var(--serif);
 }
 
 html {
@@ -55,8 +23,20 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
+  font-family: var(--serif);
   font-size: 18px;
   line-height: 1.95;
+}
+
+/* 明體／宋體標題 */
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+blockquote {
+  font-family: var(--serif);
 }
 
 .site-header {
@@ -347,10 +327,15 @@ a {
   color: var(--muted);
 }
 
+/* =========================
+   手機版
+   ========================= */
+
 @media (max-width: 700px) {
 
   body {
     font-size: 17px;
+    font-family: var(--serif);
   }
 
   .site-header {
