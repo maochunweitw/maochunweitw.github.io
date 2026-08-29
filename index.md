@@ -76,7 +76,7 @@ layout: default
     <span>WRITINGS</span>
   </div>
 
-  {% for post in site.posts %}
+  {% for post in site.posts limit:5 %}
 
   <article class="post-card">
 
