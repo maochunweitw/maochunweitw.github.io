@@ -1,0 +1,16 @@
+<div style="background-color: #0f0f0f; border-radius: 12px; padding: 16px; margin-top: 24px; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <!-- 第一排：標題 -->
+  <div style="font-size: 16px; font-weight: 700; color: #ffffff; margin-bottom: 6px; line-height: 1.4;">
+    {{ include.title }}
+  </div>
+
+  <!-- 第二排：頻道名稱與觀看次數 -->
+  <div style="font-size: 13px; color: #aaaaaa; margin-bottom: 12px; line-height: 1.3;">
+    {{ include.channel }}
+  </div>
+
+  <!-- 第三排：影片縮圖 -->
+  <a href="https://youtu.be/{{ include.id }}" target="_blank" style="display: block; text-decoration: none; border: none; outline: none;">
+    <img src="https://img.youtube.com/vi/{{ include.id }}/hqdefault.jpg" alt="{{ include.title }}" style="width: 100%; height: auto; display: block; border-radius: 8px; border: none; margin: 0; padding: 0;" />
+  </a>
+</div>
