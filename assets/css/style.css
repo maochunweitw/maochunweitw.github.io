@@ -9,7 +9,7 @@
   --line: #ddd7cc;
   --accent: #875043;
 
-  --serif: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+  --serif: "Noto Serif TC", "Songti TC", "PingFang TC", serif;
 
   --sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
     "PingFang TC", "Noto Sans TC", sans-serif;
@@ -26,17 +26,6 @@ body {
   font-family: var(--serif);
   font-size: 18px;
   line-height: 1.95;
-}
-
-/* 明體／宋體標題 */
-h1,
-h2,
-h3,
-h4,
-p,
-li,
-blockquote {
-  font-family: var(--serif);
 }
 
 .site-header {
@@ -326,10 +315,6 @@ a {
 .empty {
   color: var(--muted);
 }
-
-/* =========================
-   手機版
-   ========================= */
 
 @media (max-width: 700px) {
 
