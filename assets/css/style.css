@@ -9,7 +9,8 @@
   --line: #ddd7cc;
   --accent: #875043;
 
-  --serif: "Noto Serif TC", "Songti TC", "PingFang TC", serif;
+  --serif: "Noto Serif TC", "Songti TC", "Source Han Serif TC",
+    "Noto Serif CJK TC", "PMingLiU", serif;
 
   --sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
     "PingFang TC", "Noto Sans TC", sans-serif;
@@ -315,6 +316,10 @@ a {
 .empty {
   color: var(--muted);
 }
+
+/* =========================
+   手機版
+   ========================= */
 
 @media (max-width: 700px) {
 
