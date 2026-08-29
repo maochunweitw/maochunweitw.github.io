@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "班師回朝後的倒數計時"
-date: 2016-10-13
+date: 2016-10-13 20:00:00 +0800
 category: "05 記憶收藏 / Memory Archive"
 ---
 
