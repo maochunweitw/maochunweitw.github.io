@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Iansui";
+  src: url("../fonts/Iansui-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --paper: #f7f4ed;
   --ink: #25231f;
@@ -9,8 +17,7 @@
   --line: #ddd7cc;
   --accent: #875043;
 
-  /* 芫荽體 */
-  --serif: "芫荽體", "Iansui", "Iansui Regular", serif;
+  --serif: "Iansui", serif;
 
   --sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
     "PingFang TC", "Noto Sans TC", sans-serif;
@@ -166,7 +173,7 @@ body {
   text-decoration: none;
 }
 
-/* 八大分類 */
+/* 文章分類 */
 
 .category-list {
   display: grid;
