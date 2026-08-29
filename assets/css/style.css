@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -9,9 +11,7 @@
   --line: #ddd7cc;
   --accent: #875043;
 
-  /* 中文明體／宋體 */
-  --serif: "Noto Serif TC", "Noto Serif CJK TC", "Songti TC",
-    "STSong", "PMingLiU", "MingLiU", serif;
+  --serif: "Noto Serif TC", serif;
 
   --sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
     "PingFang TC", "Noto Sans TC", sans-serif;
