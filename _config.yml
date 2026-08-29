@@ -3,3 +3,4 @@ description: "淳文字。｜CHUN WEN ZI · PERSONAL JOURNAL"
 theme: minima
 markdown: kramdown
 permalink: /:categories/:year/:month/:day/:title.html
+timezone: Asia/Taipei
