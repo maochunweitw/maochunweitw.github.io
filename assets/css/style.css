@@ -15,6 +15,38 @@
     "PingFang TC", "Noto Sans TC", sans-serif;
 }
 
+/* 全站中文內容使用明體／宋體 */
+html,
+body,
+.site-header,
+.main-content,
+.hero,
+.intro,
+.section-heading,
+.section-heading h2,
+.post-card,
+.post-card h3,
+.post-card p,
+.category-list,
+.category-card,
+.category-card strong,
+.category-card span,
+.about-block,
+.about-block h2,
+.manifesto,
+.manifesto p,
+.page-header,
+.page-header h1,
+.post,
+.post-header,
+.post-header h1,
+.post-content,
+.post-content p,
+.notice-list,
+.notice-list li {
+  font-family: var(--serif);
+}
+
 html {
   background: var(--paper);
 }
@@ -23,7 +55,6 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: var(--serif);
   font-size: 18px;
   line-height: 1.95;
 }
