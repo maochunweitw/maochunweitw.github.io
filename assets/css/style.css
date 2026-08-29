@@ -270,6 +270,22 @@ body {
   margin: 0 0 1.6em;
 }
 
+/* =========================
+   文章圖片
+   ========================= */
+
+.post-content img {
+  display: block;
+  width: 100%;
+  max-width: 760px;
+  height: auto;
+  margin: 30px auto 12px;
+}
+
+.post-content p:has(img) {
+  max-width: 760px;
+}
+
 .back-link {
   margin-top: 60px;
   padding-top: 20px;
@@ -316,10 +332,6 @@ a {
 .empty {
   color: var(--muted);
 }
-
-/* =========================
-   手機版
-   ========================= */
 
 @media (max-width: 700px) {
 
@@ -387,6 +399,15 @@ a {
 
   .manifesto p {
     font-size: 23px;
+  }
+
+  /* 手機圖片 */
+
+  .post-content img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 25px auto 10px;
   }
 
   footer {
