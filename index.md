@@ -12,12 +12,12 @@ title: 淳文字。
 
 ## 01 最新文字
 
-### [自取其辱的事，別做](/posts/dont-do-humiliating-things/)
+### [自取其辱的事，別做]({{ '/posts/dont-do-humiliating-things/' | relative_url }})
 *2026.08.13*
 
 有些事情，明明知道做了會讓自己難堪，卻還是會去看。
 
-[閱讀全文 →](/posts/dont-do-humiliating-things/)
+[閱讀全文 →]({{ '/posts/dont-do-humiliating-things/' | relative_url }})
 
 ---
 
