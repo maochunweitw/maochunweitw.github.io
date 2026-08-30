@@ -1,0 +1,10 @@
+--- layout: default ---
+{{ page.category_name }}
+{{ page.category_english }}
+{% for post in site.posts %} {% if post.category == page.category_name or post.categories contains page.category_name %}
+{{ post.date | date: "%Y.%m.%d" }}
+{{ post.title }}
+{{ post.excerpt | strip_html | strip_newlines | truncate: 120 }}
+
+閱讀全文 →
+{% endif %} {% endfor %}
