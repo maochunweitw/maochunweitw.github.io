@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: category
 title: "04 城市觀察 / City Notes"
 category_name: "04 城市觀察 / City Notes"
 permalink: /category/city-notes/
