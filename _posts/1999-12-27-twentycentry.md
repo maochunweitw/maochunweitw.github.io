@@ -47,6 +47,7 @@ category: "02 生命經驗 / Life Stories"
   </iframe>
 </div>
 
+
 歌：the pillows
 作詞：山中沢男
 作曲：山中沢男
