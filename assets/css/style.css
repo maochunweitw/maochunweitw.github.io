@@ -330,6 +330,11 @@ body {
   font: 12px/1.5 var(--sans);
 }
 
+
+/* =========================================================
+   Footer
+   ========================================================= */
+
 footer {
   max-width: 1180px;
   margin: auto;
@@ -339,6 +344,51 @@ footer {
   font: 12px/1.5 var(--sans);
 }
 
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.footer-copy {
+  white-space: nowrap;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 18px;
+  height: 18px;
+
+  color: var(--muted);
+  text-decoration: none;
+
+  transition:
+    color .2s ease,
+    transform .2s ease;
+}
+
+.social-link svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.social-link:hover {
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+
 a {
   color: var(--accent);
 }
@@ -346,6 +396,11 @@ a {
 .empty {
   color: var(--muted);
 }
+
+
+/* =========================================================
+   手機版
+   ========================================================= */
 
 @media (max-width: 700px) {
 
@@ -438,7 +493,20 @@ a {
     height: 100%;
   }
 
+  /* 手機 Footer */
+
   footer {
     padding: 22px 22px 40px;
+  }
+
+  .footer-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .social-links {
+    gap: 16px;
   }
 }
