@@ -358,7 +358,7 @@ footer {
 .social-links {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .social-link {
@@ -366,8 +366,8 @@ footer {
   align-items: center;
   justify-content: center;
 
-  width: 13px;
-  height: 13px;
+  width: 16px;
+  height: 16px;
 
   color: var(--muted);
   text-decoration: none;
@@ -379,8 +379,8 @@ footer {
 
 .social-link svg {
   display: block;
-  width: 11px;
-  height: 11px;
+  width: 14px;
+  height: 14px;
   fill: currentColor;
 }
 
@@ -507,6 +507,6 @@ a {
   }
 
   .social-links {
-    gap: 11px;
+    gap: 13px;
   }
 }
