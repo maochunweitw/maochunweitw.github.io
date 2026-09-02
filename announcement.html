@@ -1,6 +1,8 @@
 ---
 layout: default
-title: 公告
+title: "公告"
+category_name: "公告"
+permalink: /announcement.html
 ---
 
 <section class="latest">
@@ -10,9 +12,210 @@ title: 公告
     <span>ANNOUNCEMENT</span>
   </div>
 
-  <article class="post-card">
-    <h3>淳文字</h3>
-    <p>這裡是淳文字的公告。</p>
-  </article>
+  <div class="category-posts" data-posts-per-page="5">
+
+    {% for post in site.posts %}
+      {% if post.category == page.category_name or post.categories contains page.category_name %}
+
+        <article class="post-card">
+
+          <div class="post-meta">
+            {{ post.date | date: "%Y.%m.%d" }}
+          </div>
+
+          <h3>
+            <a href="{{ post.url | relative_url }}">
+              {{ post.title }}
+            </a>
+          </h3>
+
+          <p>
+            {{ post.excerpt | strip_html | strip_newlines | truncate: 120 }}
+          </p>
+
+          <a class="read-more" href="{{ post.url | relative_url }}">
+            閱讀全文 →
+          </a>
+
+        </article>
+
+      {% endif %}
+    {% endfor %}
+
+  </div>
+
+  <nav
+    class="category-pagination"
+    aria-label="公告文章分頁"
+    style="display:flex; justify-content:center; align-items:center; gap:12px; margin:50px 0 20px; font-size:18px;"
+  ></nav>
 
 </section>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const container = document.querySelector(".category-posts");
+  const pagination = document.querySelector(".category-pagination");
+
+  if (!container || !pagination) return;
+
+  const posts = Array.from(
+    container.querySelectorAll(".post-card")
+  );
+
+  const postsPerPage =
+    Number(container.dataset.postsPerPage) || 5;
+
+  const totalPosts = posts.length;
+  const totalPages =
+    Math.ceil(totalPosts / postsPerPage);
+
+  if (totalPages <= 1) {
+    pagination.style.display = "none";
+    return;
+  }
+
+  const params =
+    new URLSearchParams(window.location.search);
+
+  let currentPage =
+    parseInt(params.get("page"), 10);
+
+  if (!currentPage || currentPage < 1) {
+    currentPage = 1;
+  }
+
+  if (currentPage > totalPages) {
+    currentPage = totalPages;
+  }
+
+  function showPage(page) {
+
+    currentPage = page;
+
+    const start =
+      (page - 1) * postsPerPage;
+
+    const end =
+      start + postsPerPage;
+
+    posts.forEach(function (post, index) {
+
+      post.style.display =
+        index >= start && index < end
+          ? ""
+          : "none";
+
+    });
+
+    renderPagination();
+
+    const newUrl =
+      window.location.pathname +
+      (page > 1 ? "?page=" + page : "");
+
+    window.history.replaceState(
+      {},
+      "",
+      newUrl
+    );
+  }
+
+  function createLink(
+    label,
+    page,
+    active
+  ) {
+
+    const element =
+      document.createElement(
+        active ? "span" : "a"
+      );
+
+    element.textContent = label;
+
+    element.style.textDecoration = "none";
+    element.style.padding = "4px 8px";
+
+    if (active) {
+
+      element.style.fontWeight = "bold";
+
+    } else {
+
+      element.href =
+        window.location.pathname +
+        (page > 1 ? "?page=" + page : "");
+
+      element.addEventListener(
+        "click",
+        function (event) {
+
+          event.preventDefault();
+
+          showPage(page);
+
+          window.scrollTo({
+            top: container.offsetTop - 80,
+            behavior: "smooth"
+          });
+
+        }
+      );
+    }
+
+    return element;
+  }
+
+  function renderPagination() {
+
+    pagination.innerHTML = "";
+
+    if (currentPage > 1) {
+
+      pagination.appendChild(
+        createLink(
+          "← 上一頁",
+          currentPage - 1,
+          false
+        )
+      );
+
+    }
+
+    for (
+      let page = 1;
+      page <= totalPages;
+      page++
+    ) {
+
+      pagination.appendChild(
+        createLink(
+          String(page),
+          page,
+          page === currentPage
+        )
+      );
+
+    }
+
+    if (currentPage < totalPages) {
+
+      pagination.appendChild(
+        createLink(
+          "下一頁 →",
+          currentPage + 1,
+          false
+        )
+      );
+
+    }
+
+  }
+
+  showPage(currentPage);
+
+});
+</script>
