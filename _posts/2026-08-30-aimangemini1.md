@@ -3,6 +3,15 @@ layout: post
 title: "與AI的對話(2)懷舊都會愛情文學風格探討"
 date: 2026-08-30 15:30:00 +0800 
 category: "03 閱讀與創作 / Reading & Creation"
+tags:
+  - AI
+  - Chatgpt
+  - Google Gemini
+  - 散文
+  - 情感
+  - 千禧世代
+  - 省思
+  - 感觸
 ---
 這也是一次很有趣的嘗試。我把過去幾篇文章提交AI(Google Gemini)來分析，它的確能夠反饋給我一些很有參考價值的東西。
 
