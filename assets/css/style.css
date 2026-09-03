@@ -505,7 +505,130 @@ a {
     align-items: flex-start;
     gap: 14px;
   }
+/* =========================================================
+   索引 / Index
+   ========================================================= */
 
+.index-section {
+  margin-top: 55px;
+}
+
+.index-section:first-of-type {
+  margin-top: 0;
+}
+
+.tag-list,
+.archive-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.tag-item,
+.archive-item {
+  border-bottom: 1px solid var(--line);
+}
+
+.tag-item a,
+.archive-item a {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 0;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.tag-item a:hover,
+.archive-item a:hover {
+  color: var(--accent);
+}
+
+.tag-name {
+  font-size: 18px;
+}
+
+.tag-count {
+  flex-shrink: 0;
+  color: var(--muted);
+  font: 12px/1.5 var(--sans);
+}
+
+.archive-year {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.index-note {
+  margin: 20px 0 0;
+  color: var(--muted);
+  font: 13px/1.8 var(--sans);
+}
+
+.archive-year-group {
+  margin-bottom: 55px;
+}
+
+.archive-year-group h2 {
+  margin: 0;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--line);
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.archive-year-group .post-card:first-child {
+  padding-top: 30px;
+}
+
+.tag-result-header {
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.tag-result-header h1 {
+  margin: 8px 0;
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.tag-result-header span {
+  color: var(--muted);
+  font: 12px/1.5 var(--sans);
+  letter-spacing: .14em;
+}
+
+.index-empty {
+  color: var(--muted);
+  padding: 25px 0;
+}
+
+@media (max-width: 700px) {
+
+  .index-section {
+    margin-top: 45px;
+  }
+
+  .tag-item a,
+  .archive-item a {
+    padding: 14px 0;
+  }
+
+  .tag-name {
+    font-size: 17px;
+  }
+
+  .archive-year {
+    font-size: 18px;
+  }
+
+  .tag-result-header h1 {
+    font-size: 36px;
+  }
+}
   .social-links {
     gap: 13px;
   }
