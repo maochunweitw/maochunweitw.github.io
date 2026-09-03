@@ -5,6 +5,7 @@ date: 2012-02-06 22:30:00 +0800
 category: "05 記憶收藏 / Memory Archive"
 tags:
   - 中國
+  - 廣東
   - 深圳
   - 台灣
   - 台北
