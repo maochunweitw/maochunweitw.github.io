@@ -6,6 +6,8 @@ category: "02 生命經驗 / Life Stories"
 tags:
   - 大學
   - 省思
+  - 台灣
+  - 台北
   - 日文
   - 歌曲
   - 電影
