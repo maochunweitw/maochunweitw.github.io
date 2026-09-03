@@ -3,6 +3,10 @@ layout: post
 title: "人生經歷與承受能力"
 date: 2026-05-10 19:00:00 +0800 
 category: "02 生命經驗 / Life Stories"
+tags:
+  - 轉貼文章
+  - 網路
+  - 省思
 ---
 
 不要用自己的想象
