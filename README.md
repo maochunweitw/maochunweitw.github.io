@@ -1,4 +1,3 @@
 # 淳文字
 
-品牌正式名稱：淳文字（三個字）。
-「。」只作為視覺分隔符號，用來與 slogan 區隔，不屬於品牌名稱。
+Journal of Words, Memories & Human Stories
