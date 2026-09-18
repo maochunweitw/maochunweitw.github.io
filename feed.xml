@@ -23,9 +23,9 @@ layout: null
 
       <title>{{ post.title | escape }}</title>
 
-      <link>https://maochunweitw.github.io{{ post.url | escape }}</link>
+      <link>https://maochunweitw.github.io{{ post.url | replace: '&', '&amp;' }}</link>
 
-      <guid isPermaLink="true">https://maochunweitw.github.io{{ post.url | escape }}</guid>
+      <guid isPermaLink="true">https://maochunweitw.github.io{{ post.url | replace: '&', '&amp;' }}</guid>
 
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 
