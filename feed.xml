@@ -2,7 +2,9 @@
 layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+
   <channel>
 
     <title>淳文字</title>
@@ -11,10 +13,25 @@ layout: null
 
     <link>https://maochunweitw.github.io/</link>
 
+    <atom:link
+      href="https://maochunweitw.github.io/feed.xml"
+      rel="self"
+      type="application/rss+xml" />
+
+    {% for post in site.posts limit:20 %}
     <item>
-      <title>淳文字測試文章</title>
-      <link>https://maochunweitw.github.io/</link>
+
+      <title>{{ post.title | escape }}</title>
+
+      <link>https://maochunweitw.github.io{{ post.url | escape }}</link>
+
+      <guid isPermaLink="true">https://maochunweitw.github.io{{ post.url | escape }}</guid>
+
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+
     </item>
+    {% endfor %}
 
   </channel>
+
 </rss>
