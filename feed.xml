@@ -28,8 +28,6 @@ layout: null
 
       <title>{{ post.title | xml_escape }}</title>
 
-      <description>{{ post.excerpt | strip_html | strip_newlines | xml_escape }}</description>
-
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 
       <link>https://maochunweitw.github.io{{ post.url }}</link>
