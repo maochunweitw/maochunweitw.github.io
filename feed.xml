@@ -6,15 +6,15 @@ layout: null
   <channel>
 
     <title>淳文字</title>
+
     <description>淳文字。｜CHUN WEN ZI · PERSONAL JOURNAL</description>
+
     <link>https://maochunweitw.github.io/</link>
 
-    {% for post in site.posts limit:20 %}
     <item>
-      <title>最新文章</title>
-      <link>https://maochunweitw.github.io{{ post.url }}</link>
+      <title>淳文字測試文章</title>
+      <link>https://maochunweitw.github.io/</link>
     </item>
-    {% endfor %}
 
   </channel>
 </rss>
